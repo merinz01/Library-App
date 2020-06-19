@@ -1,0 +1,19 @@
+body{
+    background-image: url("../images/bgauthors.jpg");
+    background-size:cover;
+    background-repeat: no repeat;  
+    background-position: center center;
+    background-attachment: fixed;
+
+ }
+
+.inner{
+    overflow: hidden;
+   
+}
+.inner img{
+    transition: all 1.5s ease;
+}
+.inner:hover img{
+    transform: scale(1.5);
+}

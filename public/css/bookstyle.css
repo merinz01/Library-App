@@ -1,0 +1,102 @@
+body,html{
+   overflow-x: hidden;
+   background-image: url("../images/bookbg.jpg");
+   background-size:cover;
+   background-repeat: no repeat; 
+   margin: 0;
+   padding: 0;
+   max-width: 100%;
+ }
+
+.fancy-cards{
+   text-align: center;
+   margin: 50px auto;
+   margin-bottom: 10px !important;
+ }
+ .fancy-cards .fancy-card{
+   display: inline-block;
+   position: relative;
+   margin-top: 20px;
+   left: 20px;
+   box-sizing: border-box;
+   margin-right: 80px;
+   margin-bottom: 0px;
+ }
+ 
+ .fancy-card .top,
+ .fancy-card .middle,
+ .fancy-card .bottom{
+   position: relative;
+   border-radius: 3px;
+   overflow: hidden;
+   width: 200px;
+   height: 300px;
+   transition: transform 300ms linear-out;
+ }
+ .fancy-card .top{
+   z-index: 3;
+   transform: scale(1.0);
+   transition: transform 300ms cubic-bezier(0.22, 0.61, 0.36, 1);
+   box-shadow: 0px 1px 3px rgba(25,25,25,0.30);
+ }
+ .fancy-card .middle{
+   position: absolute;
+   background: #aaa;
+   top: 0px;
+   z-index: 2;
+   transform: rotate(0deg);
+   transition: transform 250ms cubic-bezier(0.68, -0.55, 0.27, 1.55);
+ }
+ .fancy-card .bottom{
+   position: absolute;
+   background: #ccc;
+   top: 0px;
+   z-index: 1;
+   transform: rotate(0deg);
+   transition: transform 250ms cubic-bezier(0.68, -0.55, 0.27, 1.55);
+ }
+ 
+ .fancy-card .caption{
+   overflow: hidden;
+   background: rgba(0,0,0,0.75);
+   padding: 15px 10px;
+   position: absolute;
+   bottom: 0px;
+   left: 0px;
+   width: 100%;
+ }
+ 
+ .fancy-card .caption .button{
+   display: inline-block;
+   color: rgb(59, 16, 216);
+   text-decoration: none;
+   border: solid 1px #555;
+   padding: 7px 13px;
+   background-color: transparent;
+   transition: all 300ms ease-in;
+ }
+ 
+ 
+ /*hovering*/
+ .fancy-card:hover .top{
+   transform: scale(1.05);
+ }
+ .fancy-card:hover .middle{
+  transform: rotate(-7deg);
+  box-shadow: 1px 1px 2px rgba(74, 74, 74, 0.35);
+ }
+ .fancy-card:hover .bottom{
+   transform: rotate(7deg);
+   box-shadow: 1px 1px 2px rgba(113, 113, 113, 0.35);
+ }
+ 
+ .fancy-card:hover .button{
+   background: blue;
+   color: rgb(17, 164, 209);
+   border: 0px;
+ }
+
+
+ 
+
+

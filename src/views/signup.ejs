@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title><%=title%></title>
+    
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="icon" href="./images/icon.png">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/signup.css">
+   
+</head>
+
+<body>
+    <nav class="navbar fixed-top navbar-expand-lg navbar-default"style="background-color:rgb(2, 31, 105)" font-color="white ">
+		<div class="container-fluid">
+		  <a class="navbar-brand" href="#"><img src="./images/icon1.jpg" width="30" height="30" alt="" class="d-inline-block align-top" ></a>
+		  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+	   <i class="fas fa-bars"></i>
+	  </button>
+	  
+		  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+			<ul class="navbar-nav mr-auto w-100 ">
+      
+          <div class="ml-auto">
+						<a class="btn btn-primary btn-sm" type="button" href="<%=logout[0].link%>" style="background-color:rgb(8, 67, 218);width: 80px;"><%=logout[0].name%></a>
+           </div>
+          </nav>
+	  <br><br>
+
+  <div class="container">
+      <div class="col-lg-10 m-auto d-block">
+    <h1>REGISTER</h1>
+    <form id="registration_form" action="/login" onsubmit="return validation()"> 
+        <div class="form-group">
+        <label>First Name</label>
+        <input type="text" id="fname" name=""  class="form-control"autocomplete="off">
+       <span id="fnameid" class="text-danger font-weight-bold"></span>  
+        </div>
+        <div class="form-group">
+        <label>Second Name</label>
+        <input type="text" id="sname" name=""  class="form-control"autocomplete="off">
+        <span id="snameid" class="text-danger font-weight-bold"></span>  
+        </div>
+        <div class="form-group">
+        <label>Email</label>
+        <input type="email" id="email" name=""  class="form-control"autocomplete="off">
+        <span id="emailid" class="text-danger font-weight-bold"></span>  
+        </div>
+        <div class="form-group">
+        <label>Password</label>
+        <input type="password" id="password" name=""  class="form-control"autocomplete="off">
+        <span id="passwordid" class="text-danger font-weight-bold"></span>  
+        </div>
+        <div>
+        <div class="form-group">
+        <label>Confirm Password</label>
+        <input type="password" id="confirmpassword" name=""  class="form-control"autocomplete="off">
+        <span id="confirmpasswordid" class="text-danger font-weight-bold"></span>  
+        </div>
+        <input type="submit" value="Submit" class="btn btn-success" >
+    </form>
+    </div>
+    </div>
+      
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/signup.js"></script> 
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script> 
+      
+   </body>
+</html>

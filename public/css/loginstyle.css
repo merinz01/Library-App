@@ -1,0 +1,94 @@
+  body{
+    overflow-y: scroll;
+    overflow-x: hidden;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: Arial, Helvetica, sans-serif;
+    background-blend-mode: normal; 
+   } 
+     section{
+        margin-top: 0px;
+        background-image: url("../images/loginbg.jpg");
+        background-size:cover;
+        height: 100%;
+        width: 100%;
+        display: block;
+        position: absolute; 
+        display: flex;
+        background-repeat: no repeat;
+        background-color: rgb(229, 232, 233);
+        background-blend-mode: normal;
+    }
+    .main-section{
+        margin: 0 auto;
+        margin-top: 130px;
+        padding: 0;
+    }
+    .modal-content{
+        background-color: 50%transparent;
+        opacity: 0.95;
+        padding: 0 18px;
+        box-shadow:0px 0px 3px #848484;
+        width: 400px;
+
+    }
+    .user-img{
+        margin-top:-125px ;
+        margin-bottom: 35px;
+        border: none;
+    }
+    .user-img img{
+        height:200px;
+        width: 200px;
+        border-radius: 5px;
+        box-shadow:none;
+
+    }
+    .login-form{
+        max-width: 100%;
+        width: 370px;
+        padding: 15px;
+        margin: auto;
+        height: 400px;
+        }
+    .form-control{
+        font-size: 15px;
+        min-height: 48px;
+        font-weight: 500;
+    }
+    .form-control:focus{
+        border-color: #0a3fa0;
+        box-shadow:0 0 0 0.2rem rgba(114, 61, 190, 0.25) ;
+    }
+    .forgot-link{
+        font-size: 13px;
+    }
+    .forgot-link label{
+        margin-bottom: 0;
+    }
+    .login-form a{
+        text-decoration: none;
+        color: #666;
+    }
+    .login-form a :hover{
+         color:  #2a53da; 
+    }
+    .btn-custom{
+        background: #2a53da;
+        border-color:#2a53da;
+        color:#fff;
+        font-size: 15px;
+        font-weight: 600;
+        min-height: 48px;
+     }
+     .btn-custom:focus,
+     .btn-custom:hover,
+     .btn-custom:active,
+     .btn-custom:active:focus{
+         background: #54229d;
+         border-color: #54229d;
+         color: #fff;
+     }
+     .btn-custom:focus{
+        box-shadow:0 0 0 0.2rem rgba(114, 61, 190, 0.25) ;
+     }
